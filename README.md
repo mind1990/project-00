@@ -20,7 +20,7 @@ Your work must:
 - Include separate HTML/CSS /JavaScript files.
 - Stick with the KISS (Keep It Simple Stupid) and DRY (Don't Repeat Yourself) principles.
 - Use JavaScript or jQuery for DOM manipulation.
-- Be deployed and accessible online. (Justin will cover this on Monday)
+- Be deployed and accessible online. (We will cover this on Monday)
 
 
 ---
@@ -126,6 +126,7 @@ Based on the requirements above, you can earn a maximum of **24** points on this
 | Uses JavaScript or jQuery for DOM manipulation |     |    |     |     |  
 | Includes the interactions listed under "Necessary Deliverables" |     |    |     |     |
 | Is deployed online |     |    |     |     |
+| Redability/ Code Quality |	|     |     |     |
 
 This will serve as a helpful overall gauge of whether or not you've met the project goals. It can also help you identify where to focus your efforts for the next project!
 

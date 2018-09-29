@@ -12,12 +12,24 @@ body {
 /* Header
    ================================================================ */
 
-header {
-	/*background-color: #456279;*/
+ul {
+	display: inline-block;
+	list-style: none;
+}
+nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
 	background-color: black;
 	color: white;
-	position: fixed;
 	width: 100%;
+	height: 40px;
+	font-size: 24px;
+}
+
+#links {
+	display: flex;
 }
 
 .links-container {
@@ -27,16 +39,6 @@ header {
 	padding-top: 15px;
 }
 
-nav {
-	margin: 0 auto;
-	display: block;
-	width: 100%;
-	height: 50px;
-}
-
-ul {
-	list-style: none;
-}
 
 li {
 	display: inline;
@@ -53,7 +55,7 @@ a {
    ================================================================ */
 
 
-article {
+#intro {
 	text-align: center;
 	margin-bottom: 50px;
 	padding: 100px 0;
@@ -64,6 +66,11 @@ img {
 	height: auto;
   border-radius: 120px;
   margin: 50px 0;
+}
+
+h2 {
+	font-size: 18px;
+	padding-top: 20px;
 }
 
 .row {
@@ -82,7 +89,8 @@ img {
 #main-container {
 	display: flex;
 	flex-direction: column;
-	width: 66.6667%;
+	width: 50%;
+
 }
 
 #aside-container {
@@ -117,7 +125,7 @@ h3 {
 input {
 	text-align: center;
 	height: 50px;
-	width: 200px;
+	width: 300px;
 	border-radius: 20px;
 	border: 1px solid black;
 	margin: 2px 5px;
@@ -127,7 +135,7 @@ input {
 	line-height: 100px;
 	text-align: center;
 	height: 108px;
-	width: 200px;
+	width: 300px;
 	border-radius: 25px;
 	resize: none;
 	border: 1px solid black;
@@ -143,18 +151,112 @@ input {
 footer {
 	display: flex;
 	width: 100%;
-	height: 70px;
+	height: 200px;
 	color: white;
 	background-color: black;
 	bottom: 0px;
+	overflow: auto;
+}
+
+.copyrigth {
+	border-top: 2px solid white;
 }
 
 
+/* Media Queries For tablet Screen
+   ================================================================ */
 
+@media only screen and (max-width: 780px) {
+	* {
+		font-size: 24px;
+	}
 
+	nav {
+		height: 60px;
+		bottom: 0;
+	}
 
+	a {
+		font-size: 20px;
+		padding: 0 3px;
+	}
 
+	#intro {
+		padding: 30px 0;
+	}
 
+	#main-container {
+		width: 100%;
+		padding: 20px 10px;
+		margin: 10px 10px;
+	}
+
+	#aside-container {
+		width: 100%;
+		padding: 20px 10px;
+		margin: 10px 10px;
+	}
+
+	.row {
+		padding: 30px 0;
+		flex-direction: column;
+	}
+	
+	#form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	}
+	
+
+	footer {
+		height: 100%;
+	}
+
+}
+
+/* Media Queries For Phones screen
+   ================================================================ */ 
+
+@media only screen and (max-width: 450px) {
+	nav {
+		height: 45px;
+		bottom: 0;
+	}
+	a {
+		font-size: 18px;
+		padding: 0;
+	}
+	
+	img {
+		margin: 0px;
+	}
+	
+	.row {
+		flex-direction: column;
+	}
+	
+	#main-container {
+		width: 100%;
+	}
+
+	#aside-container {
+		width: 100%;
+	}
+
+	#form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	}
+
+	footer {
+		height: 100%;
+		margin-bottom: 45px;
+	}
+
+}
 
 
 
